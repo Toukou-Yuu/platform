@@ -37,11 +37,11 @@ const routes = [
 
   // student
   {
-    path: '/stu_info', redirect: '/personal', component: StudentInfo, children: [
-      { path: '/personal', component: PersonalPage },
+    path: '/stu_info', redirect: '/stuInfo', component: StudentInfo, children: [
+      { path: '/stuInfo', component: PersonalPage },
       { path: '/selection', component: Selection },
-      { path: '/grade', component: Grade },
-      { path: '/aspiration', component: Aspiration },
+      { path: '/scoreSearch', component: Grade },
+      { path: '/aspirationFill', component: Aspiration },
     ]
   },
 

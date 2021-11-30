@@ -1,7 +1,7 @@
 <template>
   <el-container class="global-container">
     <!-- 头部区域 -->
-    <el-header class="header">
+    <el-header class="header" style="background-color: #f1f2f6">
       <div>
         <span>招聘管理系统（考生）</span>
       </div>
@@ -10,11 +10,21 @@
 
     <el-container>
       <!-- 侧边导航栏区域 -->
-      <el-aside :width="isCollapse ? '64px' : '200px'" class="aside">
-        <div class="collapse-style" @click="collapse()">&lt;&gt;</div>
+      <el-aside
+        :width="isCollapse ? '64px' : '200px'"
+        class="aside"
+        style="background-color: #313138"
+      >
+        <div
+          class="collapse-style"
+          @click="collapse()"
+          style="background-color: #313138"
+        >
+          &lt;&gt;
+        </div>
 
         <el-menu
-          background-color="rgb(113, 184, 255)"
+          background-color="#313138"
           text-color="#fff"
           active-text-color="#ffd04b"
           :collapse="isCollapse"
@@ -37,8 +47,13 @@
         </el-menu>
       </el-aside>
       <!-- 主体区域 -->
-      <el-main>
+      <el-main class="my-el-main">
         <router-view></router-view>
+        <el-footer class="footer"
+          ><div class="footer-div">
+            &copy;Copyright Team By Yuu&Hu
+          </div></el-footer
+        >
       </el-main>
     </el-container>
   </el-container>
@@ -158,5 +173,20 @@ export default {
   letter-spacing: 0.2em;
   /* 鼠标焦点 */
   cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  line-height: 80px;
+}
+
+.my-el-main {
+  padding-bottom: 0px !important;
+}
+
+.footer-div {
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
 }
 </style>

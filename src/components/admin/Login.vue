@@ -111,7 +111,7 @@ export default {
                 // 保存token
                 window.sessionStorage.setItem("token", result.data.token);
                 // 跳转到admin页面
-                this.$router.push("/home");
+                this.$router.push("/login");
               } else {
                 this.$message.error("用户名不存在或密码错误");
               }

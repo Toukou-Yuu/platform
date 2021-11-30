@@ -1,6 +1,6 @@
 <template>
   <div class="register_container">
-    <div class="form_container">
+    <div class="register_form_container">
       <div class="title">注册</div>
       <el-form
         ref="registerFormRef"
@@ -168,7 +168,7 @@ export default {
   background-color: rgb(243, 243, 243);
 }
 
-.form_container {
+.register_form_container {
   width: 600px;
   /* height: 350px; */
   height: 660px;

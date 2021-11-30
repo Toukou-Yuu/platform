@@ -67,6 +67,7 @@
       <!-- 主体区域 -->
       <el-main>
         <router-view></router-view>
+        <!-- <el-footer>Footer</el-footer> -->
       </el-main>
     </el-container>
   </el-container>
