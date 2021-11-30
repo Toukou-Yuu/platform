@@ -3,7 +3,7 @@
     <el-header class="return">
       <el-button type="normal" @click="returnNormal()">返回</el-button>
     </el-header>
-    <div class="form_container">
+    <div class="changePwd_form_container">
       <div class="title">修改密码</div>
       <el-form
         ref="changePwdRef"
@@ -155,7 +155,7 @@ export default {
   background-color: rgb(243, 243, 243);
 }
 
-.form_container {
+.changePwd_form_container {
   width: 500px;
   /* height: 350px; */
   height: 400px;

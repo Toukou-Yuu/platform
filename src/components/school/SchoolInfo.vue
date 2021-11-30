@@ -5,7 +5,12 @@
       <div>
         <span>招聘管理系统（学校）</span>
       </div>
-      <el-button type="info" @click="logout()">退出登录</el-button>
+      <div class="head_div">
+        <el-avatar :src="this.avaUrl" class="avatar"></el-avatar>
+        <el-button type="normal" @click="logout()" class="logout"
+          >退出登录</el-button
+        >
+      </div>
     </el-header>
 
     <el-container>
@@ -67,7 +72,11 @@
       <!-- 主体区域 -->
       <el-main>
         <router-view></router-view>
-        <!-- <el-footer>Footer</el-footer> -->
+        <el-footer class="sch-footer"
+          ><div class="sch-footer-div">
+            &copy;Copyright Team By Yuu&Hu
+          </div></el-footer
+        >
       </el-main>
     </el-container>
   </el-container>
@@ -82,6 +91,7 @@ export default {
       iscollapseTransition: false,
       // 被激活的地址
       activedPath: "",
+      avaUrl: "https://avatars.githubusercontent.com/u/64688619?v=4",
     };
   },
   methods: {
@@ -201,5 +211,24 @@ export default {
   letter-spacing: 0.2em;
   /* 鼠标焦点 */
   cursor: pointer;
+}
+
+.logout {
+  margin-left: 15px !important;
+}
+
+.sch-footer {
+  text-align: center;
+  line-height: 80px;
+}
+
+.scj-footer-div {
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+}
+
+.head_div{
+  display: flex;
 }
 </style>

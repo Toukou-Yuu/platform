@@ -123,7 +123,7 @@ export default {
   background-color: rgb(183, 220, 255);
   display: flex;
   /* 均匀排列每个元素；首个元素放置于起点，末尾元素放置于终点 */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   /* 让按钮居中显示 */
   align-items: center;

@@ -5,7 +5,7 @@
       <div>
         <span>招聘管理系统（考生）</span>
       </div>
-      <el-button type="info" @click="logout()">退出登录</el-button>
+      <el-button type="normal" @click="logout()">退出登录</el-button>
     </el-header>
 
     <el-container>
@@ -129,7 +129,7 @@ export default {
   background-color: rgb(48, 108, 165);
   display: flex;
   /* 均匀排列每个元素；首个元素放置于起点，末尾元素放置于终点 */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   /* 让按钮居中显示 */
   align-items: center;
